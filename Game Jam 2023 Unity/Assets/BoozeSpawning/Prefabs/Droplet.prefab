@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5394157167239101285}
   - component: {fileID: 7595030708632109237}
   - component: {fileID: -402512872337488807}
+  - component: {fileID: -7405803936520873183}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Droplet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,3 +113,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7405803936520873183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724695786159099734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec23b4e863368da4fb55f51d1a08da90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

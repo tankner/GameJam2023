@@ -5,8 +5,7 @@ using UnityEngine;
 public class BoozeSpawner : MonoBehaviour
 {
 
-
-    [SerializeField] private GameObject pumpkin;  // reference to pumpkin
+    [SerializeField] private GameObject droplet;  // reference to pumpkin
     [SerializeField] private int numToSpawn;
     [SerializeField] private int veloMax;
 
@@ -15,7 +14,7 @@ public class BoozeSpawner : MonoBehaviour
     {
         for (int i = 0; i < numToSpawn; i++)
         {
-            Instantiate(pumpkin, new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(0, 5.0f), 0),
+            Instantiate(droplet, new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(0, 5.0f), 0),
                 Quaternion.identity);
             
 
