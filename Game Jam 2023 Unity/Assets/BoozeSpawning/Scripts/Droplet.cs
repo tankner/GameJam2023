@@ -9,13 +9,18 @@ public class Droplet : MonoBehaviour
 
     private void OnEnable()
     {
-        Invoke("Destroy", 3f);
+        Invoke("Destroy", 8f);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        moveSpeed = 5f;    
+        moveSpeed = 2f;    
+    }
+
+    public void SetMoveDirection(Vector2 dir)
+    {
+        moveDirection = dir;
     }
 
     // Update is called once per frame

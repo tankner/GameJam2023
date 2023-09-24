@@ -16,8 +16,6 @@ public class BoozeSpawner : MonoBehaviour
         {
             Instantiate(droplet, new Vector3(Random.Range(-5.0f, 5.0f), Random.Range(0, 5.0f), 0),
                 Quaternion.identity);
-            
-
         }
     }
 
