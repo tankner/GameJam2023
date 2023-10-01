@@ -351,6 +351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parasite
       objectReference: {fileID: 0}
+    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
+      propertyPath: moveSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8795883410526428624, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.8188872
@@ -517,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44955645a9676fa46aa65934fa7df510, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropletAmount: 5
+  dropletAmount: 1
   dropletPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &2026053451
 Transform:
