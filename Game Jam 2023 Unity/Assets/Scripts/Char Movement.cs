@@ -68,10 +68,12 @@ public class NewBehaviourScript : MonoBehaviour
     // collisions
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // TODO: add different booze types
         switch(collision.gameObject.tag)
         {
             case "Booze":
                 collision.gameObject.SetActive(false);
+                // increment cup counter
                 break;
         }
     }

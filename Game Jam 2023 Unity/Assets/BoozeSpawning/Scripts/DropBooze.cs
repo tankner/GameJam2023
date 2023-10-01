@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DropBooze : MonoBehaviour
 {
-    [SerializeField] private int dropletAmount = 10;
+    [SerializeField] private int dropletAmount = 1;
 
     public Vector3 dropletPosition;
 
@@ -19,7 +19,7 @@ public class DropBooze : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Drop", 0f, 8f);
+        InvokeRepeating("Drop", 0f, 1f);
     }
 
     private void Drop()

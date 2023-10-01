@@ -7,11 +7,6 @@ public class Droplet : MonoBehaviour
     private Vector2 moveDirection;
     private float moveSpeed;
 
-    private void OnEnable()
-    {
-        Invoke("Destroy", 8f);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +40,7 @@ public class Droplet : MonoBehaviour
         {
             case "Boundary":
                 Destroy();
-                // TODO: increment counter
+                // TODO: increment drop counter
                 break;
         }
     }
