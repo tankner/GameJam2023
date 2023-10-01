@@ -38,4 +38,15 @@ public class Droplet : MonoBehaviour
     {
         CancelInvoke();
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Boundary":
+                Destroy();
+                // TODO: increment counter
+                break;
+        }
+    }
 }
