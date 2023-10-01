@@ -63,4 +63,16 @@ public class NewBehaviourScript : MonoBehaviour
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
+
+
+    // collisions
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        switch(collision.gameObject.tag)
+        {
+            case "Booze":
+                collision.gameObject.SetActive(false);
+                break;
+        }
+    }
 }

@@ -29,6 +29,7 @@ public class DropBooze : MonoBehaviour
             GameObject drop = DropletPool.instance.GetDroplet();
             dropletPosition = new Vector3(Random.Range(min_x, max_x), Random.Range(min_y, max_y), 0);
             drop.transform.position = dropletPosition;
+            drop.transform.rotation = Quaternion.identity;
             drop.SetActive(true);
 
             if (dropletPosition[0] < min_x + 1.0f)
