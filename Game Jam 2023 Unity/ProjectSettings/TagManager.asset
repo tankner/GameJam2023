@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Booze
+  - Boundary
   layers:
   - Default
   - TransparentFX
