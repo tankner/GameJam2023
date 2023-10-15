@@ -39,6 +39,9 @@ public class Droplet : MonoBehaviour
         switch (collision.gameObject.tag)
         {
             case "Boundary":
+                SetMoveDirection(new Vector2(-moveDirection[0], moveDirection[1]));
+                break;
+            case "Floor":
                 Destroy();
                 // TODO: increment drop counter
                 break;

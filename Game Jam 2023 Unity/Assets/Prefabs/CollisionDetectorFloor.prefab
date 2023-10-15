@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3009750998810395740}
   m_Layer: 0
   m_Name: CollisionDetectorFloor
-  m_TagString: Boundary
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

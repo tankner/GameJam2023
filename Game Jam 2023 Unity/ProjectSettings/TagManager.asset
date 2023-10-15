@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Booze
   - Boundary
+  - Floor
   layers:
   - Default
   - TransparentFX
