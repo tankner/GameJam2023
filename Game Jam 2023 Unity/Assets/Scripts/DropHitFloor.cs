@@ -12,12 +12,12 @@ public class BoozeCounter : MonoBehaviour
         count = 0;
     }
 
-    public void DropHitFloor()
+    public void HitFloor()
     {
         count++;
     }
 
-    public int getCount()
+    public int getFloorCount()
     {
         return count;
     }
