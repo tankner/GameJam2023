@@ -44,6 +44,7 @@ public class Droplet : MonoBehaviour
             case "Floor":
                 Destroy();
                 // TODO: increment drop counter
+                // DropHitFloor();
                 break;
         }
     }
