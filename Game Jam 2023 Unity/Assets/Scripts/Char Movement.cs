@@ -8,6 +8,8 @@ public class NewBehaviourScript : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D myRB;
     Vector2 coordinate;
+    int count;
+    [SerializeField] int max = 10; // max booze level
 
 
     [Header("Dash")]
@@ -19,7 +21,11 @@ public class NewBehaviourScript : MonoBehaviour
     bool isDashing;
 	bool canDash = true;
 
-  
+    void Start()
+    {
+        count = 0;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -72,9 +78,21 @@ public class NewBehaviourScript : MonoBehaviour
         switch(collision.gameObject.tag)
         {
             case "Booze":
+                if (count < max)
+                {
+                    count++;
+                    UnityEngine.Debug.Log(count);
+                }
                 collision.gameObject.SetActive(false);
                 // increment cup counter
                 break;
         }
+    }
+
+    public void EmptyCup(string powerup)  // not sure if powerup like this is good
+    {
+        if (count < max) return;
+        count = 0;
+        // TODO: call respective powerup function
     }
 }

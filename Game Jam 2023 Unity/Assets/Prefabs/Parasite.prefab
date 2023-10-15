@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   myRB: {fileID: 8011825664360025322}
+  max: 10
   dashSpeed: 100
   dashSpeedMultiply: 0.2
   dashTime: 0.2
