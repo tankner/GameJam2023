@@ -83,12 +83,14 @@ public class NewBehaviourScript : MonoBehaviour
                     count++;
                     UnityEngine.Debug.Log(count);
                 }
+                else UnityEngine.Debug.Log("Cup full");
                 collision.gameObject.SetActive(false);
                 // increment cup counter
                 break;
         }
     }
 
+    // placeholder for drinking and getting power up
     public void EmptyCup(string powerup)  // not sure if powerup like this is good
     {
         if (count < max) return;
