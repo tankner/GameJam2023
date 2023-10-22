@@ -49,7 +49,10 @@ public class NewBehaviourScript : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Space) & canDash)
 		{
             StartCoroutine(Dash());
-		}
+		} else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            EmptyCup();
+        }
         // Get vector2D for dash direction
         dashDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
@@ -107,7 +110,7 @@ public class NewBehaviourScript : MonoBehaviour
                     // set state 3
                     myRenderer.sprite = state3;
                 }
-                else
+                else if (count == max)
                 {
                     UnityEngine.Debug.Log("Cup full");
                     // set state 4
@@ -120,10 +123,15 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     // placeholder for drinking and getting power up
-    public void EmptyCup(string powerup)  // not sure if powerup like this is good
+    public void EmptyCup()  // not sure if powerup like this is good
     {
         if (count < max) return;
+        // TODO: trigger drinking animation
+
+        // empty cup
         count = 0;
+        myRenderer.sprite = state1;
+
         // TODO: call respective powerup function
     }
 }
