@@ -7,9 +7,15 @@ public class NewBehaviourScript : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
     public Rigidbody2D myRB;
+    public SpriteRenderer myRenderer;
     Vector2 coordinate;
+    
     int count;
-    [SerializeField] int max = 10; // max booze level
+    [SerializeField] int max =15;    // max booze level
+    public Sprite state1;  // empty state
+    public Sprite state2;  // 1/3 full state
+    public Sprite state3;  // 2/3 full state
+    public Sprite state4;  // full state
 
 
     [Header("Dash")]
@@ -17,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] float dashSpeedMultiply = 0.3f;
     [SerializeField] float dashTime = 0.5f;
     [SerializeField] float dashCooldown = 1f;
+    
     Vector2 dashDir;
     bool isDashing;
 	bool canDash = true;
@@ -24,6 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         count = 0;
+        myRenderer.sprite = state1;
     }
 
     // Update is called once per frame
@@ -78,12 +86,33 @@ public class NewBehaviourScript : MonoBehaviour
         switch(collision.gameObject.tag)
         {
             case "Booze":
-                if (count < max)
+                if (count < max / 3)
                 {
                     count++;
                     UnityEngine.Debug.Log(count);
+                    // set state 1
+                    myRenderer.sprite = state1;
                 }
-                else UnityEngine.Debug.Log("Cup full");
+                else if (count < max * 2 / 3)
+                {
+                    count++;
+                    UnityEngine.Debug.Log(count);
+                    // set state 2
+                    myRenderer.sprite = state2;
+                }
+                else if (count < max)
+                {
+                    count++;
+                    UnityEngine.Debug.Log(count);
+                    // set state 3
+                    myRenderer.sprite = state3;
+                }
+                else
+                {
+                    UnityEngine.Debug.Log("Cup full");
+                    // set state 4
+                    myRenderer.sprite = state4;
+                }
                 collision.gameObject.SetActive(false);
                 // increment cup counter
                 break;

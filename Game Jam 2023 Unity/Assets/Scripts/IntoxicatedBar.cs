@@ -6,8 +6,8 @@ public class IntoxicatedBar : MonoBehaviour
 {
 
     [SerializeField] private Slider slider;
-    
-    
+    [SerializeField] private GameObject floor;
+
     public void setMaxLiquor(int liquor)
 	{
         slider.maxValue = liquor;
