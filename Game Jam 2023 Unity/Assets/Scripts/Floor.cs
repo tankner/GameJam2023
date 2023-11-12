@@ -12,6 +12,9 @@ public class Floor : MonoBehaviour
         count = 0;
     }
 
+    public int getMax() { return max; }
+    public int getCount() { return count; }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Booze")
