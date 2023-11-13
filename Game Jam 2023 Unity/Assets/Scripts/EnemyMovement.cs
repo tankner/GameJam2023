@@ -22,6 +22,8 @@ public class EnemyMovement : MonoBehaviour
         // Calling player transform component
         player = GameObject.FindGameObjectWithTag("Player").transform;
         timeBtwShots = startTimeBtwShots;
+        stopDistance += Random.Range(-2.0f, 3.0f);
+        retreatDistance += Random.Range(-2.0f, 3.0f);
     }
 
     // Update is called once per frame

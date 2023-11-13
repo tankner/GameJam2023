@@ -67,7 +67,7 @@ public class NewBehaviourScript : MonoBehaviour
         myRB.MovePosition(myRB.position + coordinate.normalized * moveSpeed * Time.fixedDeltaTime);
 	}
 
-    //Dash mechanic
+    // Dash mechanic
     private IEnumerator Dash()
     {
         // while dash, canDash become false because Dash too many time is OP
