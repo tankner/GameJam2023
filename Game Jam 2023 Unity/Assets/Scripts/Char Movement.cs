@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    [SerializeField] GameObject EnemySpawner;
     [Header("Movement")]
     public float moveSpeed = 5f;
     public Rigidbody2D myRB;
@@ -119,6 +120,25 @@ public class NewBehaviourScript : MonoBehaviour
                 collision.gameObject.SetActive(false);
                 // increment cup counter
                 break;
+            case "Bullet":
+                if(count < max / 3)
+                {
+                    count = 0;
+                } else if (count < max *2/3){
+                    count -= max / 3;
+                    myRenderer.sprite = state1;
+                } else if (count < max)
+                {
+                    count -= max / 3;
+                    myRenderer.sprite = state2;
+                } else 
+                {
+                    count -= max / 3;
+                    myRenderer.sprite = state3;
+                }
+                UnityEngine.Debug.Log("hit");
+                UnityEngine.Debug.Log(count);
+                break;
         }
     }
 
@@ -131,7 +151,7 @@ public class NewBehaviourScript : MonoBehaviour
         // empty cup
         count = 0;
         myRenderer.sprite = state1;
+        EnemySpawner.GetComponent<EnemySpawner>().Kill();
 
-        // TODO: call respective powerup function
     }
 }
