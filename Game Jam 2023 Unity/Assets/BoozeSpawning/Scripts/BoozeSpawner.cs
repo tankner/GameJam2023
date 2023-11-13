@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoozeSpawner : MonoBehaviour
 {
 
-    [SerializeField] private GameObject droplet;  // reference to pumpkin
+    [SerializeField] private GameObject droplet;  // reference to droplet
     [SerializeField] private int numToSpawn;
     [SerializeField] private int veloMax;
 

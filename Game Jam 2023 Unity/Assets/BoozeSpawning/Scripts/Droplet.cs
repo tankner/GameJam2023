@@ -7,6 +7,7 @@ public class Droplet : MonoBehaviour
     private Vector2 moveDirection;
     private float moveSpeed;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,9 @@ public class Droplet : MonoBehaviour
                 break;
             case "Floor":
                 Destroy();
-                // TODO: increment drop counter
+                break;
+            case "Cup":
+                Destroy();
                 break;
         }
     }
