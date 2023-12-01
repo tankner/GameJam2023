@@ -17,8 +17,8 @@ public class BulletProjectile : MonoBehaviour
     {
         //Call the parasite position
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        // Make a vector that targeting the parasite position
-        target = new Vector2(player.position.x, player.position.y);
+        // Make a vector that targeting the parasite cup position
+        target = new Vector2(player.position.x - 1.1, player.position.y - 0.5);
         // Make a velocity vector that targeting the parasite position
         direction = (new Vector3(player.position.x, player.position.y, 0) - transform.position).normalized;
         

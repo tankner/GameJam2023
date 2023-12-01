@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3825267175543901205}
   - component: {fileID: 8011825664360025322}
   - component: {fileID: 4880767048515840643}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Parasite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 2377951058022278597}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8188872, y: -4.194112, z: 0}
-  m_LocalScale: {x: 2.6807, y: 2.208, z: 1}
+  m_LocalPosition: {x: -3.5, y: -4.37, z: 0}
+  m_LocalScale: {x: 0.90096146, y: 0.8290319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,9 +99,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 548c4e7dfb44c0046a7e919ae03cffec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  EnemySpawner: {fileID: 0}
+  moveSpeed: 7
   myRB: {fileID: 8011825664360025322}
+  myRenderer: {fileID: 6512935427983117895}
   max: 10
+  state1: {fileID: 21300000, guid: 3ce947e7ce7ac4f46b7ace72398082bc, type: 3}
+  state2: {fileID: 21300000, guid: 5d649d9c0dfa1904bb2bf7b989d8bd2d, type: 3}
+  state3: {fileID: 21300000, guid: fc60bda875f4a7e49aaaca37311a4979, type: 3}
+  state4: {fileID: 21300000, guid: 30f23ca83ec97e548b773b3c42013224, type: 3}
   dashSpeed: 100
   dashSpeedMultiply: 0.2
   dashTime: 0.2
@@ -165,6 +171,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.335}
-  m_Size: {x: 0.26, y: 0.34999996}
+  m_Offset: {x: -1.1, y: 0.51570845}
+  m_Size: {x: 1.381487, y: 1.5013494}
   m_Direction: 0
