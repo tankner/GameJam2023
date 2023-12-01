@@ -5,6 +5,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     [SerializeField] GameObject EnemySpawner;
+    [SerializeField] GameObject Parasite;
     [Header("Movement")]
     public float moveSpeed = 5f;
     public Rigidbody2D myRB;
@@ -44,6 +45,23 @@ public class NewBehaviourScript : MonoBehaviour
 		}
         //Get coordinate(x, y)
         coordinate.x = Input.GetAxisRaw("Horizontal");
+        Debug.Log("Parasite Position: " + Parasite.transform.position.x);
+        Debug.Log("Mouse Position: " + Input.mousePosition.x);
+
+        Vector2 screenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // Flip sprite when mouse is on the left side of the screen and flip capsule collider 2d to match the sprite
+
+        if (screenPosition.x < Parasite.transform.position.x)
+        {
+            myRenderer.flipX = false;
+            Parasite.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.5f, 0);
+        }
+        else
+        {
+            myRenderer.flipX = true;
+            Parasite.GetComponent<CapsuleCollider2D>().offset = new Vector2(0.5f, 0);
+        }
+
         coordinate.y = Input.GetAxisRaw("Vertical");
 
         // Check if player press dash

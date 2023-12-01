@@ -51,6 +51,7 @@ public class EnemyMovement : MonoBehaviour
         if(timeBtwShots <= 0)
 		{   //Release bullet from current enemy body with no rotation(Quaternion.identity)
             Instantiate(bullet, transform.position, Quaternion.identity);
+            
             // Update re initialize timeBtwShots with startTimeBtwShots;
             timeBtwShots = startTimeBtwShots;
 		}
