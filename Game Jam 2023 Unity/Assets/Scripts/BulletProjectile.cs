@@ -9,6 +9,7 @@ public class BulletProjectile : MonoBehaviour
     public float bulletDistance;
 
     public Transform player;
+    public Collider2D cupCollider;
     private Vector2 target;
     private Vector3 direction;
 
@@ -17,9 +18,7 @@ public class BulletProjectile : MonoBehaviour
     {
         //Call the parasite position
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        // Make a vector that targeting the parasite position
-        target = new Vector2(player.position.x, player.position.y);
-        // Make a velocity vector that targeting the parasite position
+        // Make a direction vector that targeting the parasite position
         direction = (new Vector3(player.position.x, player.position.y, 0) - transform.position).normalized;
         
     }

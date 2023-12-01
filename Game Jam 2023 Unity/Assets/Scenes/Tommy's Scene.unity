@@ -169,11 +169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &451491433 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6512935427983117895, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-  m_PrefabInstance: {fileID: 943125850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &559355072
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,78 +355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parasite
       objectReference: {fileID: 0}
-    - target: {fileID: 2377951058022278597, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Layer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2377951058022278597, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: state1
-      value: 
-      objectReference: {fileID: 21300000, guid: 3ce947e7ce7ac4f46b7ace72398082bc, type: 3}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: state2
-      value: 
-      objectReference: {fileID: 21300000, guid: 5d649d9c0dfa1904bb2bf7b989d8bd2d, type: 3}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: state3
-      value: 
-      objectReference: {fileID: 21300000, guid: fc60bda875f4a7e49aaaca37311a4979, type: 3}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: state4
-      value: 
-      objectReference: {fileID: 21300000, guid: 30f23ca83ec97e548b773b3c42013224, type: 3}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: moveSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: myRenderer
-      value: 
-      objectReference: {fileID: 451491433}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: EnemySpawner
       value: 
       objectReference: {fileID: 559355072}
-    - target: {fileID: 4880767048515840643, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Size.x
-      value: 1.381487
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880767048515840643, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Size.y
-      value: 1.5013494
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880767048515840643, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Offset.x
-      value: -1.3274865
-      objectReference: {fileID: 0}
-    - target: {fileID: 4880767048515840643, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.51570845
-      objectReference: {fileID: 0}
-    - target: {fileID: 6512935427983117895, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6630f7919b6f842fd9dca981e7d2b0a7, type: 3}
-    - target: {fileID: 6512935427983117895, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6512935427983117895, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8795883410526428624, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.90096146
-      objectReference: {fileID: 0}
-    - target: {fileID: 8795883410526428624, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8290319
-      objectReference: {fileID: 0}
     - target: {fileID: 8795883410526428624, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.75
