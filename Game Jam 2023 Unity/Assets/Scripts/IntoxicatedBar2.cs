@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class IntoxicatedBar2 : MonoBehaviour
 {
@@ -19,5 +20,10 @@ public class IntoxicatedBar2 : MonoBehaviour
     void Update()
     {
         slider.value = floor.getCount();
+
+        if (slider.value == 30)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

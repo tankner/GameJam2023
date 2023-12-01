@@ -12,12 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Conner's Scene.unity
     guid: 2243f3679c8c4451e9901cc5be43e2c1
   - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: cf492c6406ea74f8db9b3b340f65f672
+  - enabled: 0
     path: Assets/Scenes/Start Scene.unity
     guid: 36ad18943b3554f89b4b49b77696fbab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/scene_1.unity
     guid: 13c6a0f21f2bc1f468e6fa248a69b8de
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 580d6bf310e2a4d1e887a6cc2f54a0b1
   m_configObjects: {}
