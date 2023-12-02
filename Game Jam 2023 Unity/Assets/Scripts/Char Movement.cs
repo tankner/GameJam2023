@@ -72,7 +72,7 @@ public class NewBehaviourScript : MonoBehaviour
             StartCoroutine(Dash());
 		} else if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(EmptyCup());
+            EmptyCup1();
         }
         // Get vector2D for dash direction
         dashDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
@@ -155,7 +155,12 @@ public class NewBehaviourScript : MonoBehaviour
                 break;
         }
     }
-
+    public void EmptyCup1()
+    {
+        if (count < max) return;
+        myRenderer.sprite = drinkSprite;
+        StartCoroutine(EmptyCup());
+    }
     // placeholder for drinking and getting power up
     public IEnumerator EmptyCup()  // not sure if powerup like this is good
     {
