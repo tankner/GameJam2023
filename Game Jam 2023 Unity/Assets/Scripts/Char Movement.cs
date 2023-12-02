@@ -19,6 +19,8 @@ public class NewBehaviourScript : MonoBehaviour
     public Sprite state3;  // 2/3 full state
     public Sprite state4;  // full state
 
+    public Sprite drinkSprite;  // drinking animation
+
 
     [Header("Dash")]
     [SerializeField] float dashSpeed = 100f;
@@ -70,7 +72,7 @@ public class NewBehaviourScript : MonoBehaviour
             StartCoroutine(Dash());
 		} else if (Input.GetKeyDown(KeyCode.Q))
         {
-            EmptyCup();
+            StartCoroutine(EmptyCup());
         }
         // Get vector2D for dash direction
         dashDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
@@ -104,9 +106,13 @@ public class NewBehaviourScript : MonoBehaviour
     // collisions
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // TODO: add different booze types
+        if(myRenderer.sprite == drinkSprite)
+            {
+                return;
+            }
         switch(collision.gameObject.tag)
         {
+            
             case "Booze":
                 if (count < max / 3)
                 {
@@ -161,10 +167,11 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     // placeholder for drinking and getting power up
-    public void EmptyCup()  // not sure if powerup like this is good
+    public IEnumerator EmptyCup()  // not sure if powerup like this is good
     {
-        if (count < max) return;
-        // TODO: trigger drinking animation
+        if (count < max) yield return null;
+        myRenderer.sprite = drinkSprite;
+        yield return new WaitForSeconds(1.0f);
 
         // empty cup
         count = 0;

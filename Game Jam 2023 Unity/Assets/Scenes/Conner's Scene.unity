@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: max
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: state1
@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: myRenderer
       value: 
       objectReference: {fileID: 741357939}
+    - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
+      propertyPath: drinkSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a6edb08d9a4b02948bf210aa6c47c595, type: 3}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: EnemySpawner
       value: 
@@ -995,8 +999,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1251986479
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf91b86e95ae448188dba7a4b2e448c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
