@@ -420,6 +420,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2812782984207917202, guid: b97e95b845adc824ba3d09866199b1aa, type: 3}
+      propertyPath: m_VideoClip
+      value: 
+      objectReference: {fileID: 32900000, guid: 9d01348be07d2d249b41483b55346529, type: 3}
+    - target: {fileID: 2812782984207917202, guid: b97e95b845adc824ba3d09866199b1aa, type: 3}
       propertyPath: m_RenderMode
       value: 1
       objectReference: {fileID: 0}
@@ -427,6 +431,10 @@ PrefabInstance:
       propertyPath: m_TargetCamera
       value: 
       objectReference: {fileID: 1683227404}
+    - target: {fileID: 2812782984207917202, guid: b97e95b845adc824ba3d09866199b1aa, type: 3}
+      propertyPath: m_PlaybackSpeed
+      value: 2.59
+      objectReference: {fileID: 0}
     - target: {fileID: 8254720129802564262, guid: b97e95b845adc824ba3d09866199b1aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.6368036

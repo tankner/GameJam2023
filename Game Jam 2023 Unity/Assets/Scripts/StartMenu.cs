@@ -13,7 +13,7 @@ public class StartMenu : MonoBehaviour
     IEnumerator VideoAndStart()
     {
         myPlayer.Play();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(10);
         Destroy(myPlayer.gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
