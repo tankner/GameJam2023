@@ -12,7 +12,7 @@ public class IntoxicatedBar2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        slider.maxValue = 100;
+        slider.maxValue = 30;
         slider.value = 0;
     }
 

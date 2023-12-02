@@ -12,6 +12,7 @@ public class BulletProjectile : MonoBehaviour
     public Collider2D cupCollider;
     private Vector2 target;
     private Vector3 direction;
+    //SpriteRenderer renderer;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,6 @@ public class BulletProjectile : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         // Make a direction vector that targeting the parasite position
         direction = (new Vector3(player.position.x, player.position.y, 0) - transform.position).normalized;
-        
     }
 
     // Update is called once per frame
