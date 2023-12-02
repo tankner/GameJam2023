@@ -5,7 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    public UnityEngine.Video.VideoPlayer myPlayer;
     public void StartGame() {
+        StartCoroutine(VideoAndStart());
+    }
+
+    IEnumerator VideoAndStart()
+    {
+        myPlayer.Play();
+        yield return new WaitForSeconds(5);
+        Destroy(myPlayer.gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

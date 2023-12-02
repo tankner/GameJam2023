@@ -106,14 +106,15 @@ public class NewBehaviourScript : MonoBehaviour
     // collisions
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(myRenderer.sprite == drinkSprite)
-            {
-                return;
-            }
+        
         switch(collision.gameObject.tag)
         {
             
             case "Booze":
+                if(myRenderer.sprite == drinkSprite)
+                {
+                    return;
+                }
                 if (count < max / 3)
                 {
                     count++;
@@ -145,23 +146,12 @@ public class NewBehaviourScript : MonoBehaviour
                 // increment cup counter
                 break;
             case "Bullet":
-                if(count < max / 3)
+                if(myRenderer.sprite == drinkSprite)
                 {
-                    count = 0;
-                } else if (count < max *2/3){
-                    count -= max / 3;
-                    myRenderer.sprite = state1;
-                } else if (count < max)
-                {
-                    count -= max / 3;
-                    myRenderer.sprite = state2;
-                } else 
-                {
-                    count -= max / 3;
-                    myRenderer.sprite = state3;
+                    break;
                 }
-                UnityEngine.Debug.Log("hit");
-                UnityEngine.Debug.Log(count);
+                count = 0;
+                myRenderer.sprite = state1;
                 break;
         }
     }

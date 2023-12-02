@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class Video : MonoBehaviour
 {
+    public UnityEngine.Video.VideoPlayer myPlayer;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject camera = GameObject.Find("Main Camera");
-        var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
-        videoPlayer.url = "../test.mp4";
-        videoPlayer.Play();
+        StartCoroutine(PlayVideo());
+    }
+
+    IEnumerator PlayVideo()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(myPlayer.gameObject);
     }
 
     void EndReached(UnityEngine.Video.VideoPlayer vp)
