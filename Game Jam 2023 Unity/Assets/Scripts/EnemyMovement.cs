@@ -16,6 +16,9 @@ public class EnemyMovement : MonoBehaviour
 
     public Transform player;
     public GameObject bullet;
+    public SpriteRenderer myRenderer;
+    public Sprite chillState;  // normal state
+    public Sprite shootState;  // shooting state
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
         if(timeBtwShots <= 0)
 		{   //Release bullet from current enemy body with no rotation(Quaternion.identity)
             Instantiate(bullet, transform.position, Quaternion.identity);
-            
+            StartCoroutine(Shoot());
             // Update re initialize timeBtwShots with startTimeBtwShots;
             timeBtwShots = startTimeBtwShots;
 		}
@@ -61,5 +64,11 @@ public class EnemyMovement : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
 		}
       
+    }
+
+    IEnumerator Shoot(){
+        myRenderer.sprite = shootState;
+        yield return new WaitForSeconds(0.5f);
+        myRenderer.sprite = chillState;
     }
 }

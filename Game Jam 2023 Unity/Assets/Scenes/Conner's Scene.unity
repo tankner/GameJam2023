@@ -359,7 +359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: max
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3825267175543901205, guid: 297ea1b45434ef74d92238f48f8472d1, type: 3}
       propertyPath: state1
@@ -644,6 +644,50 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1742667650}
   m_SourcePrefab: {fileID: 100100000, guid: 2df5d70017af4464c952791df5991857, type: 3}
+--- !u!1 &1515460716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515460718}
+  - component: {fileID: 1515460717}
+  m_Layer: 0
+  m_Name: Intro Video
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1515460717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515460716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21db9adbe8dff2c42b43528596c64a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1515460718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515460716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2881227, y: -3.1349025, z: -0.016299432}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1670125905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1195,3 +1239,4 @@ SceneRoots:
   - {fileID: 588482372}
   - {fileID: 1913792652}
   - {fileID: 1670125905}
+  - {fileID: 1515460718}

@@ -12,7 +12,7 @@ public class BulletProjectile : MonoBehaviour
     public Collider2D cupCollider;
     private Vector2 target;
     private Vector3 direction;
-    //SpriteRenderer renderer;
+    // public SpriteRenderer myRenderer;
 
     // Start is called before the first frame update
     void Start()

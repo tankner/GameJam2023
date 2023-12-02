@@ -104,3 +104,6 @@ MonoBehaviour:
   startTimeBtwShots: 2
   player: {fileID: 0}
   bullet: {fileID: 6893682416502062778, guid: 1f7d789c4d168ef4884ce2670b587d0b, type: 3}
+  myRenderer: {fileID: 8358810687903491884}
+  chillState: {fileID: 21300000, guid: 4d6a3310c4377ab4c9ef4860ee8dbb5e, type: 3}
+  shootState: {fileID: 21300000, guid: ef9b1c7c653b6374a9c8214d24083503, type: 3}
